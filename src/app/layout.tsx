@@ -28,7 +28,20 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+           <header className="bg-gray-900 text-white">
+          <nav className="max-w-7xl mx-auto flex justify-between items-center p-4">
+            <div className="text-2xl font-bold uppercase">LK.</div>
+            <ul className="flex space-x-6">
+              <li><a href="/" className="hover:text-yellow-500">Home</a></li>
+              <li><a href="/about" className="hover:text-yellow-500">About</a></li>
+              <li><a href="/contact" className="hover:text-yellow-500">Contact</a></li>
+            </ul>
+          </nav>
+        </header>
         {children}
+        <footer className="bg-gray-800 text-white text-center py-4">
+          &copy; 2024 LK. All rights reserved.
+        </footer>
       </body>
     </html>
   );
